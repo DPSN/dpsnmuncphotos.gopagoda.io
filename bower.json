@@ -1,0 +1,6 @@
+{
+  "name": "some app",
+  "devDependencies": {
+    "pagoda-speak-meta": "git@bitbucket.org:pagodabox-js-libs/speak-meta.git"
+  }
+}
