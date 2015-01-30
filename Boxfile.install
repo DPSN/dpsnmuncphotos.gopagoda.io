@@ -1,4 +1,4 @@
-#######  RUBY BOXFILE.INSTALL  #######
+#######  PHP BOXFILE.INSTALL  #######
 
 # The Boxfile.install allows you to apply specific configuration
 # settings to only the first deploy of an app. On deploy, the
@@ -6,12 +6,10 @@
 # deploys, the Boxfile.install is ignored and only settings
 # specified in the Boxfile will be applied.
 
-# Boxfile.installs are primarily used in Quickstarts
-
 # DOCUMENTATION LINKS
 # The Boxfile : pagodabox.io/docs/boxfile_overview
-# Ruby Settings in the Boxfile : pagodabox.io/docs/boxfile_ruby_settings
-# Ruby on Pagoda Box : pagodabox.io/docs/ruby
+# PHP Settings in the Boxfile : pagodabox.io/docs/boxfile_php_settings
+# PHP on Pagoda Box : pagodabox.io/docs/php
 # Build & Deploy Hooks : pagodabox.io/docs/build_deploy_hooks
 # Coding a Quickstart : pagodabox.io/docs/quickstart_coding
 
