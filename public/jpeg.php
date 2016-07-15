@@ -1,4 +1,4 @@
 <?php
   header('Content-Type: image/png');
-  readfile("../app/meta/dpsnmunccontents/" + $_GET['img']);
+  readfile("../app/storage/meta/dpsnmunccontents/" + $_GET['img']);
 ?>
