@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400);
+
+body {
+    font-family: 'Raleway';
+    background-attachment: fixed;
+    background-image: url(background.jpg);
+    background-color: #222;
+    background-size: cover;
+	background-repeat:repeat;
+    background-attachment: fixed;
+    color: #fff;
+    margin: 0%;
+}
+
+#navbar {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(50%, 50%, 50%, 0.8);
+    display: none;
+}
+
+#navbar > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: 'Raleway';
+}
+
+#navbar > ul > #regp {
+    float: left;
+}
+
+#navbar > ul > #website {
+    float: right;
+}
+
+#navbar > ul > li > a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+#website:hover {
+    background-color: #656;
+}
+
+#fb {
+    float: right;
+}
+
+#fb:hover {
+    background-color: #336;
+}
+
+#regp small {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 60%;
+}
+
+#website small {
+    margin-top: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 40%;
+}
+
+#fb small {
+    margin-top: 0;
+    margin: 0;
+    text-transform: lowercase;
+    font-size: 40%;
+}
+
+.foot {
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    font-family: 'Raleway';
+    text-decoration-line: overline;
+    height: 100%;
+}
+
+.foot > h1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    text-align: left;
+}
+
+.foot > p {
+    text-align: left;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.foot > .copyright {
+    text-align: center;
+}
+
+.foot a {
+    color: #fff;
+}
+
+.foot a:hover {
+    color: #789;
+}
+
+#content {
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Amatic SC';
+    height: 120%;
+    margin-bottom: 0%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#content > span {
+    font-family: 'Raleway';
+    font-stretch: extra-expanded;
+}
+
+#content #img img {
+    background-color: rgba(100%, 100%, 100%, 0.5);
+    border-radius: 100%;
+}
+
+#content > h1 {
+    margin-top: 0%;
+    margin: 5%;
+    margin-bottom: 0%;
+}
+
+#content > p {
+    margin: 10%;
+    margin-top: 0%;
+}
+
+.foot #githublogo {
+    width: 30px;
+    border-radius: 30px;
+}
+
+#navbar #fblogo {
+    width: 20px;
+    border-radius: 20px;
+}
