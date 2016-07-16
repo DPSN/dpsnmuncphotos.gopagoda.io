@@ -7,7 +7,7 @@ body {
     background-image: url(images/background.jpg);
     background-color: #222;
     background-size: cover;
-	background-repeat:repeat;
+	  background-repeat:repeat;
     background-attachment: fixed;
     color: #fff;
     margin: 0%;
@@ -85,7 +85,6 @@ body {
     color: #fff;
     text-align: center;
     font-family: 'Raleway';
-    text-decoration-line: overline;
     height: 100%;
 }
 
@@ -158,9 +157,10 @@ body {
 
 .folders ul {
     list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
+    padding-left: 0;
+    overflow: hidden;
 }
 
 .folders li {
