@@ -19,7 +19,7 @@ var TextFlick = function (text, selector) {
     }
     document.querySelector(this.selector).innerHTML = '&nbsp;';
 };
-var texy = new TextFlick('Work in progress...', '#xterm');
+var texy = new TextFlick('Photo Gallery', '#xterm');
 setInterval(function () {
     texy.addText();
 }, 150);

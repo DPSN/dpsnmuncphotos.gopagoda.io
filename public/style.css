@@ -4,7 +4,7 @@
 body {
     font-family: 'Raleway';
     background-attachment: fixed;
-    background-image: url(background.jpg);
+    background-image: url(images/background.jpg);
     background-color: #222;
     background-size: cover;
 	background-repeat:repeat;
@@ -17,7 +17,7 @@ body {
     top: 0;
     position: fixed;
     width: 100%;
-    box-shadow: 0 0 20px rgba(50%, 50%, 50%, 0.8);
+    box-shadow: 0 0 20px rgba(0%, 0%, 0%, 0.8);
     display: none;
 }
 
@@ -26,7 +26,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #222;
     font-family: 'Raleway';
 }
 
@@ -140,8 +140,10 @@ body {
 }
 
 #content > p {
-    margin: 10%;
-    margin-top: 0%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .foot #githublogo {
@@ -152,4 +154,33 @@ body {
 #navbar #fblogo {
     width: 20px;
     border-radius: 20px;
+}
+
+.folders ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.folders li {
+    display: inline-block;
+    font-family: 'Raleway';
+    font-size: 50%;
+    padding: 2%;
+}
+
+.folders li:hover {
+    border-radius: 5%;
+    text-decoration: underline;
+    background-color: rgba(100%, 100%, 100%, 0.2);
+}
+
+.folders a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.camlogo {
+    border-radius: 100%;
 }

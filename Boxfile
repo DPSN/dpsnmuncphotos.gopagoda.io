@@ -30,7 +30,7 @@ web1:
       - app/storage/meta
       - app/storage/sessions
       - app/storage/views
-      - public/mstore
+      - public/photostore
   before_deploy:
     - 'php artisan -n migrate'
   after_deploy:
