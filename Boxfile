@@ -18,7 +18,7 @@ build:
 
 web1:
   type: php
-  name: laravel
+  name: dpsnmunc16photos
   httpd_document_root: public
   php_extensions:
     - mcrypt
@@ -30,6 +30,7 @@ web1:
       - app/storage/meta
       - app/storage/sessions
       - app/storage/views
+      - public/mstore
   before_deploy:
     - 'php artisan -n migrate'
   after_deploy:

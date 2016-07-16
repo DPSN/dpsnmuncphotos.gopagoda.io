@@ -1,5 +1,5 @@
 <?php
-$im = imagecreatefromjpeg("../app/storage/meta/dpsnmunccontents/" + $_GET['img']);
+$im = imagecreatefromjpeg("mstore/" + $_GET['img']);
 
 header('Content-Type: image/jpeg');
 
