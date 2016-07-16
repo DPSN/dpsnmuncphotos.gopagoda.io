@@ -1,5 +1,5 @@
 <?php
-$im = imagecreatefromjpeg("mstore/" + $_GET['img']);
+$im = imagecreatefromjpeg("imagestore/".$_GET['folder']."/".$_GET["img"]);
 
 header('Content-Type: image/jpeg');
 

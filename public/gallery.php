@@ -1,9 +1,36 @@
 <?php
+if(isset($_GET['cam']) == false) {
+    die("Something went wrong! :(");
+}
+
+$names = array('dd' => "Daisy Ma\'am", 'bd' => "Binod Sir", 'sb' => "Souvik Bhattacharya", 'sk' => "Soumojit Karar", 'as' => "Adreesh Sen", 'ar' => "Arka Routh", 'ak' => "Anish Kumar", 'ag' => "Arunabha Goswami");
+$folders = array('dd' => "daisydeb", 'bd' => "binodsir", 'sb' => "souvikbhattacharya", 'sk' => "soumojitkarar", 'as' => "adreeshsen", 'ar' => "arkarouth", 'ak' => "anishkumar", 'ag' => "arunabhagoswami");
+
+$cam = $_GET['cam'];
+
+if(isset($names[$cam]) == false) {
+    die("Something went wrong! :(");
+}
+
+$cameraman = $names[$cam];
+$folder = $folders[$cam];
+
+function listPhotos($foldername) {
+    $ar = scandir("imagestore/".$foldername);
+    foreach ($ar as $file) {
+        $lowfile = strtolower($file);
+        if(substr($lowfile, strlen($lowfile) - 4, 4) != '.jpg') continue;
+        $thumbnaillink = "thumbnail.php?folder=".$foldername."&img=".$file;
+        $fulllink = "imagestore/".$foldername."/".$file;
+        $string = "<a href=\"".$fulllink."\"><img src=\"".$thumbnaillink."\" class=\"img\">".$file."<br></li></a>\n";
+        echo $string;
+    }
+}
 ?>
 <!doctype html>
 <html>
     <head>
-        <title>Photos by <?php echo $cam; ?> | Delhi Public School Newtown Model United Nations Conference 2016</title>
+        <title>Photos by <?php echo $cameraman; ?>| Delhi Public School Newtown Model United Nations Conference 2016</title>
         <meta name="viewport" content="width=device-width, user-scalable=yes" />
         <meta name="theme-color" content="#336" />
         <meta name="author" content="SwG Ghosh" />
@@ -26,10 +53,11 @@
         <div id="content">
             <br>
             <span>#mune</span>
-            <h1><span id="img"><img src="images/logo.png"></span><br><span id="xterm"><?php echo $cam; ?></span></h1>
+            <h1><span id="img"><img src="images/logo.png"></span><br><span id="xterm"><?php echo $cameraman; ?></span></h1>
             <p>
+                <span>Memories at DPSNMUNC'16.</span>
                 <ul class="folders" style="padding-left: 0;">
-                    <!--<a href="#"><li><img src="images/Daisy.jpg" class="camlogo"><br>Daisy<br>Maam</li></a>-->
+                    <?php listPhotos($folder); ?>
                 </ul>
             </p>
             <br>
@@ -52,6 +80,5 @@
                 </p>
             </div>
         </footer>
-    <script src="xterm.js"></script>
     </body>
 </html>

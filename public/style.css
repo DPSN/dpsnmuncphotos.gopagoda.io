@@ -145,6 +145,11 @@ body {
     margin-right: 2%;
 }
 
+#content > p > span {
+    font-family: 'Raleway';
+    font-size: 50%;
+}
+
 .foot #githublogo {
     width: 30px;
     border-radius: 30px;
