@@ -16,7 +16,7 @@ $cameraman = $names[$cam];
 $folder = $folders[$cam];
 
 function listPhotos($foldername) {
-    $ar = scandir("imagestore/".$foldername);
+    $ar = scandir("photostore/".$foldername);
     foreach ($ar as $file) {
         $lowfile = strtolower($file);
         if(substr($lowfile, strlen($lowfile) - 4, 4) != '.jpg') continue;

@@ -1,5 +1,5 @@
 <?php
-$im = imagecreatefromjpeg("imagestore/".$_GET['folder']."/".$_GET["img"]);
+$im = imagecreatefromjpeg("photostore/".$_GET['folder']."/".$_GET["img"]);
 
 header('Content-Type: image/jpeg');
 
