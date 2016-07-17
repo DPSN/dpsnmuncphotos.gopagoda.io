@@ -20,7 +20,7 @@ function listPhotos($foldername) {
     foreach ($ar as $file) {
         $lowfile = strtolower($file);
         if(substr($lowfile, strlen($lowfile) - 4, 4) != '.jpg') continue;
-        $thumbnaillink = "thumbnail.php?folder=".$foldername."&img=".$file;
+        $thumbnaillink = "photostore/thumbs/".$foldername."/".$file;
         $fulllink = "photostore/".$foldername."/".$file;
         $string = "<a href=\"".$fulllink."\" target=\"_blank\"><li><img src=\"".$thumbnaillink."\" class=\"camlogo2\" width=\"100\"><br>".$file."<br></li></a>\n";
         echo $string;
