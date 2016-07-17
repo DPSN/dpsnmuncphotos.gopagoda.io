@@ -3,8 +3,8 @@ if(isset($_GET['cam']) == false) {
     die("Something went wrong! :(");
 }
 
-$names = array('dd' => "Daisy Ma\'am", 'bd' => "Binod Sir", 'sb' => "Souvik Bhattacharya", 'sk' => "Soumojit Karar", 'as' => "Adreesh Sen", 'ar' => "Arka Routh", 'ak' => "Anish Kumar", 'ag' => "Arunabha Goswami");
-$folders = array('dd' => "daisydeb", 'bd' => "binodsir", 'sb' => "souvikbhattacharya", 'sk' => "soumojitkarar", 'as' => "adreeshsen", 'ar' => "arkarouth", 'ak' => "anishkumar", 'ag' => "arunabhagoswami");
+$names = array('dd' => "Daisy Ma'am", 'bd' => "Binod Sir", 'sb' => "Souvik Bhattacharya", 'sk' => "Soumojit Karar", 'as' => "Adreesh Sen", 'ar' => "Arka Routh", 'ak' => "Anish Kumar", 'ag' => "Arunabha Goswami");
+$folders = array('dd' => "daisymaam", 'bd' => "binodsir", 'sb' => "souvikbhattacharya", 'sk' => "soumojitkarar", 'as' => "adreeshsen", 'ar' => "arkarouth", 'ak' => "anishkumar", 'ag' => "arunabhagoswami");
 
 $cam = $_GET['cam'];
 
@@ -21,8 +21,8 @@ function listPhotos($foldername) {
         $lowfile = strtolower($file);
         if(substr($lowfile, strlen($lowfile) - 4, 4) != '.jpg') continue;
         $thumbnaillink = "thumbnail.php?folder=".$foldername."&img=".$file;
-        $fulllink = "imagestore/".$foldername."/".$file;
-        $string = "<a href=\"".$fulllink."\"><img src=\"".$thumbnaillink."\" class=\"img\">".$file."<br></li></a>\n";
+        $fulllink = "photostore/".$foldername."/".$file;
+        $string = "<a href=\"".$fulllink."\"><li><img src=\"".$thumbnaillink."\" class=\"camlogo2\" width=\"100\"><br>".$file."<br></li></a>\n";
         echo $string;
     }
 }
@@ -55,8 +55,8 @@ function listPhotos($foldername) {
             <span>#mune</span>
             <h1><span id="img"><img src="images/logo.png"></span><br><span id="xterm"><?php echo $cameraman; ?></span></h1>
             <p>
-                <span>Memories at DPSNMUNC'16.</span>
-                <ul class="folders" style="padding-left: 0;">
+                <span>Select an image for full view.</span>
+                <ul class="folders" style="padding-left: 0;  margin-top: 1%;">
                     <?php listPhotos($folder); ?>
                 </ul>
             </p>

@@ -139,8 +139,8 @@ body {
 }
 
 #content > p {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 1%;
+    margin-bottom: 0%;
     margin-left: 2%;
     margin-right: 2%;
 }
@@ -148,6 +148,7 @@ body {
 #content > p > span {
     font-family: 'Raleway';
     font-size: 50%;
+    margin-bottom: 0;
 }
 
 .foot #githublogo {
@@ -161,6 +162,7 @@ body {
 }
 
 .folders ul {
+    margin-top: 0%;
     list-style-type: none;
     margin: 0%;
     padding: 0%;
@@ -188,4 +190,8 @@ body {
 
 .camlogo {
     border-radius: 100%;
+}
+
+.camlogo2 {
+    border-radius: 2%;
 }
