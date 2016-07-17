@@ -151,6 +151,14 @@ body {
     margin-bottom: 0;
 }
 
+#content p span a {
+    color: #fff;
+}
+
+#content p span a:hover {
+    color: #789;
+}
+
 .foot #githublogo {
     width: 30px;
     border-radius: 30px;
