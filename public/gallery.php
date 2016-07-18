@@ -22,7 +22,7 @@ function listPhotos($foldername) {
         if(substr($lowfile, strlen($lowfile) - 4, 4) != '.jpg') continue;
         $thumbnaillink = "photostore/thumbs/".$foldername."/".$file;
         $fulllink = "photostore/".$foldername."/".$file;
-        $string = "<a href=\"".$fulllink."\" target=\"_blank\"><li><img src=\"".$thumbnaillink."\" class=\"camlogo2\" width=\"100\"><br>".$file."<br></li></a>\n";
+        $string = "<a href=\"".$fulllink."\" target=\"_blank\"><li><img src=\"".$thumbnaillink."\" class=\"camlogo2\" width=\"100\"><br></li></a>\n";
         echo $string;
     }
 }
