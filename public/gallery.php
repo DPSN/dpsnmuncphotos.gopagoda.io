@@ -35,7 +35,7 @@ function listPhotos($foldername) {
         <meta name="theme-color" content="#336" />
         <meta name="author" content="SwG Ghosh" />
         <meta name="description" content="#mune, All your favourite photos!" />
-        <meta name="google-site-verification" content="rL_-1teFqk4E2_AgY1htKpYS7Ve4RNIIMbaHlVP7-9k" />
+        <meta name="google-site-verification" content="vzC0mLOvTJrulFYEwyAa6oSOE4fCpfQgoAARXlR8xk4" />
         <link rel="stylesheet" href="style.css" type="text/css">
         <script src="base.js" type="text/javascript"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
