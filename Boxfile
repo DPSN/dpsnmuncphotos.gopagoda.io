@@ -107,10 +107,6 @@ web1:
     - 'php artisan -n cache:clear'
     - 'rm -f app/storage/views/*'
 
-database1:
-  name: laravel-db
-  type: mysql
-
 storage1:
   type: nfs
-  name: laravel-writables
+  name: photostorage
