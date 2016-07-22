@@ -30,7 +30,7 @@ function listPhotos($foldername) {
 <!doctype html>
 <html>
     <head>
-        <title>Photos by <?php echo $cameraman; ?>| Delhi Public School Newtown Model United Nations Conference 2016</title>
+        <title>Photos by <?php echo $cameraman; ?> | Delhi Public School Newtown Model United Nations Conference 2016</title>
         <meta name="viewport" content="width=device-width, user-scalable=yes" />
         <meta name="theme-color" content="#336" />
         <meta name="author" content="SwG Ghosh" />
