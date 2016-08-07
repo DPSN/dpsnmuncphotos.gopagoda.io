@@ -26,7 +26,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #222;
+    background-color: rgba(5%, 7%, 7%, 0.9);
     font-family: 'Raleway';
 }
 
@@ -48,7 +48,7 @@ body {
 }
 
 #website:hover {
-    background-color: #656;
+    background-color: #454;
 }
 
 #fb {
@@ -56,7 +56,7 @@ body {
 }
 
 #fb:hover {
-    background-color: #336;
+    background-color: #335;
 }
 
 #regp small {
