@@ -1,8 +1,18 @@
 document.onscroll = function () {
     if(document.body.scrollTop === 0) {
-        document.querySelector('#navbar').style.display = 'none';
+        if(window.jQuery) {
+            $(document.querySelector('#navbar')).fadeOut();
+        }
+        else {
+            document.querySelector('#navbar').style.display = 'none';
+        }
     }
     else {
-        document.querySelector('#navbar').style.display = 'block';
+      if(window.jQuery) {
+            $(document.querySelector('#navbar')).fadeIn();
+      }
+      else {
+          document.querySelector('#navbar').style.display = 'block';
+      }
     }
 };
